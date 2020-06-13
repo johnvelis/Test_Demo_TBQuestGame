@@ -4,6 +4,7 @@
 # Title: The Interview
 # *****************************
 
+import os
 from time import sleep
 
 # *****************************
@@ -12,6 +13,7 @@ from time import sleep
 #
 # *****************************
 def display_header(title):
+    os.system('cls') # use 'clear' on linux
     print()
     print('\t' + title)
     print()
@@ -20,7 +22,8 @@ display_header('The Game')
 print('Hello World')
 print()
 name = input('What is your name?')
-print(name)
+
+display_header('Orientation')
 print(f'Hello {name}')
 print()
 sleep(2)
