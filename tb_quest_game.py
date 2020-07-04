@@ -7,16 +7,15 @@
 import os
 from time import sleep
 
+from tb_quest_game_screen_methods import *
+from tb_quest_game_objects import *
+
 # *****************************
 #
-#     Display Header
+#     Initialize Player
 #
 # *****************************
-def display_header(title):
-    os.system('cls') # use 'clear' on linux
-    print()
-    print('\t' + title)
-    print()
+player = Player()
 
 display_header('The Game')
 print('Hello World')
