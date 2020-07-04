@@ -15,7 +15,7 @@ from tb_quest_game_objects import *
 #     Initialize Player
 #
 # *****************************
-player = Player()
+player = Player('Bonzo', 45, 'Explorer')
 
 display_header('The Game')
 print('Hello World')
