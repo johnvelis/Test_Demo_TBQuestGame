@@ -26,7 +26,7 @@ display_header('Orientation')
 print(f'Hello {name}')
 print()
 sleep(2)
-user_response = input("Would you like to play the game?")
+user_response = input("Would you like to play the game")
 if user_response == 'yes':
     print("Okay, let's go!")
 else:

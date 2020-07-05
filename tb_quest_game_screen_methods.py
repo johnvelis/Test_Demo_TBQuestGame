@@ -6,6 +6,11 @@ import os
 #
 # *****************************
 def display_header(title):
+    """function to clear the terminal and display a header
+
+    Args:
+        title (string): header text
+    """
     if os.name == 'nt':
         os.system('cls') # windows
     else:
