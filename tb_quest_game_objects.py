@@ -1,8 +1,8 @@
 class Player:
-    def __init__(self, name, age, status):
+    def __init__(self, name, age, rank):
         self.name = name
         self.age = age
-        self.status = status
+        self.rank = rank
 
 class Object:
     def __init__(self, name, description):
