@@ -12,10 +12,10 @@ from tb_quest_game_objects import *
 
 # *****************************
 #
-#     Initialize Player
+#     Start of Game
 #
 # *****************************
-player = Player(' ',3,' ')
+player = Player
 
 display_header('The Game')
 
@@ -47,6 +47,7 @@ if user_response == 'yes':
     print()
     print('We now need your rank. You can start the game as either a Private or Sargent.')
     print('Playing the game as a Sargent will be more difficult.')
+    print()
     while True:
         player.rank = input('Would you like to begin as a Private or a Sargent?')
         if player.rank != 'Private' and player.rank != 'Sargent':
@@ -56,4 +57,13 @@ if user_response == 'yes':
             break
 else:
     print('That\'s too bad')
+
+
+# *****************************
+#
+#     Display Player Info
+#
+# *****************************
+display_header('Player Information')
+print('Name: {}'.format(player.name))
 
